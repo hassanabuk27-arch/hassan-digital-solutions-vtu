@@ -1,1 +1,147 @@
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fc;
+  color: #172033;
+}
+
+.header {
+  background: #101d35;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header span {
+  color: #35a7ff;
+}
+
+.header button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+#menu {
+  display: none;
+  background: #172b4d;
+  padding: 15px;
+}
+
+#menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #101d35, #1764b5);
+  color: white;
+  padding: 85px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin: 20px 0;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tag {
+  color: #8dcaff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background: #35a7ff;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section:not(.hero) {
+  padding: 45px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 25px;
+  color: #14294b;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.service {
+  background: white;
+  padding: 25px 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+  font-size: 28px;
+}
+
+.service h3 {
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+.service p {
+  font-size: 13px;
+  color: #667085;
+}
+
+#about p, #contact p {
+  line-height: 1.8;
+  color: #667085;
+}
+
+footer {
+  background: #101d35;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  font-size: 13px;
+}
+
+@media (min-width: 700px) {
+  .services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu a {
+    display: inline-block;
+  }
+
+  .header button {
+    display: none;
+  }
+}
